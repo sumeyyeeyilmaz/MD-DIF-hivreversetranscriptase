@@ -1,0 +1,22 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+xgboost>=2.0
+
+# needed only to retrain the ANN; install the build matching your CUDA
+# version from pytorch.org
+torch>=2.0
+
+# The published results were produced with the versions below. Scoring the
+# stored predictions is insensitive to them; retraining XGBoost returns its
+# predictions bit for bit only under the same major version, because boosting
+# internals change between releases.
+#
+#   python        3.12.10
+#   numpy         2.5.0
+#   pandas        3.0.3
+#   scipy         1.18.0
+#   scikit-learn  1.9.0
+#   xgboost       3.3.0
+#   torch         2.11.0+cu128
